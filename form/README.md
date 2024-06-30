@@ -58,4 +58,4 @@ Read or watch:
 ---
 
 ## Author
-* **Abubakr Nasir** [Abubakr Nasir](https://github.com/DevBekoDev)
+* [Abubakr Nasir](https://github.com/DevBekoDev)
