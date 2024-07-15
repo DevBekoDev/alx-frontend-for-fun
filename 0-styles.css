@@ -1,0 +1,55 @@
+body
+{
+    display: flex;
+    width: 100%;
+}
+
+ul
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 300px;
+}
+
+.i-html
+{
+    background: url(html.png) bottom center no-repeat;
+    color: aqua;
+    display: block;
+}
+
+.i-css
+{
+    background: url(css.png) bottom center no-repeat;
+    display: block;
+}
+
+.i-js
+{
+    background: url(javascript.png) bottom center no-repeat;
+    display: block;
+}
+
+li
+{
+    height: 450px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    list-style: none;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    font-weight:bolder;
+    font-size: 40px;
+    padding: 15px 0 0 0;
+}
+
+.icon
+{
+    height: 380px;
+    width: 300px;
+    text-align: center;
+    
+}

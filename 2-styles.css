@@ -1,0 +1,78 @@
+label
+{
+    --width : 150px;
+    --height : calc(var(--width) / 4);
+    --border-radius: calc(var(--height) / 2);
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+input[type="checkbox"]
+{
+    height: 0;
+    width: 0;
+}
+
+label
+{
+    top: 20px;
+    width: var(--width);
+    height: var(--height);
+    background: whitesmoke;
+    border-radius: var(--border-radius);
+    position: relative;
+    border: double 2px;
+    border-color: grey;
+    transition: background 0.2s;
+}
+
+input:checked ~ label
+{
+    background-color: red;
+}
+
+label::after
+{
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -2px;
+    height: 50px;
+    width: 50px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: double 2px;
+    border-color: grey;
+    transition: transform 0.2s;
+
+}
+
+input:checked ~ label::after
+{
+    transform: translateX(135px);
+    left: -30px;
+}
+
+
+
+.toggle-inner:after
+{
+ content:'No';
+ color: grey;
+ display: block;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ top: 50%;
+ left: 50%;
+ font-size: 20px;
+ font-weight: bold;
+ font-family: Verdana, sans-serif;
+}
+
+input:checked + label > .toggle-inner:after
+{  
+  content: "Yes";
+  color: white;
+}

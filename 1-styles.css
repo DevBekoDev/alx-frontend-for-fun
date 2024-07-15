@@ -1,0 +1,18 @@
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #a71d3d;
+  }
+  
+  a::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #925c76;
+    transition: 400ms;
+  }
+  
+  a:hover::after {
+    width: 100%;
+  }
